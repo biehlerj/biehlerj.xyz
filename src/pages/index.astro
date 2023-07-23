@@ -1,45 +1,55 @@
 ---
-import Layout from '@layouts/Layout.astro';
-import pfp from '@assets/pfp.webp';
+import Layout from "@layouts/Layout.astro";
+import pfp from "@assets/pfp.webp";
 import SocialIcons from "@components/SocialIcons.astro";
 ---
 
 <Layout title="Jacob Biehler">
-    <main>
-        <div class="profile">
-            <img class="profile" src={pfp.src} width="150" height="150" alt="Jacob Biehler's profile picture"/>
-            <h1>Jacob Biehler</h1>
-            <span>Software Engineer and FOSS Enthusiast</span>
-        </div>
-        <SocialIcons/>
-    </main>
+  <main>
+    <div class="profile">
+      <img
+        class="profile"
+        src={pfp.src}
+        width="150"
+        height="150"
+        alt="Jacob Biehler's profile picture"
+      />
+      <h1>Jacob Biehler</h1>
+      <span>Software Engineer and FOSS Enthusiast</span>
+    </div>
+    <SocialIcons />
+    <button type="button"><a href="/about">About Me</a></button>
+    <button type="button">Experience</button>
+    <button type="button">Projects</button>
+    <button type="button">Education</button>
+  </main>
 </Layout>
 
 <style>
-    .main {
-        position: relative;
-        min-height: calc(100vh - var(--header-height) - var(--footer-height));
-        max-width: calc(var(--main-width) + var(--gap) * 2);
-        margin: auto;
-        padding: var(--gap);
-    }
+  .main {
+    position: relative;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    max-width: calc(var(--main-width) + var(--gap) * 2);
+    margin: auto;
+    padding: var(--gap);
+  }
 
-    main {
-        margin: auto;
-        padding: 1.5rem;
-        max-width: 60ch;
-        text-align: center;
-    }
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+    text-align: center;
+  }
 
-    h1 {
-        font-size: 3rem;
-        font-weight: 800;
-        margin: 0;
-    }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
 
-    img {
-        max-width: 100%;
-        display: inline-table;
-        border-radius: 50%;
-    }
+  img {
+    max-width: 100%;
+    display: inline-table;
+    border-radius: 50%;
+  }
 </style>
