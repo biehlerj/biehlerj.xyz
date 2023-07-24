@@ -8,6 +8,14 @@ const experienceCollection = defineCollection({
   }),
 });
 
+const projectsCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    date: z.date(),
+  }),
+});
+
 export const collections = {
   experience: experienceCollection,
+  projects: projectsCollection,
 };
