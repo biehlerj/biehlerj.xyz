@@ -4,7 +4,7 @@ const experienceCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     beginDate: z.date(),
-    endDate: z.date(),
+    endDate: z.nullable(z.date()),
   }),
 });
 

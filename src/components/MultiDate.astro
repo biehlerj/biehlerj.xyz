@@ -1,0 +1,23 @@
+---
+import { format } from "date-fns";
+
+interface Props {
+  firstDate: Date;
+  secondDate: Date | null;
+}
+
+const { firstDate, secondDate } = Astro.props;
+---
+
+<time datetime={firstDate.toDateString()}>{format(firstDate, "LLLL yyyy")}</time
+>
+to
+{
+  secondDate !== null ? (
+    <time datetime={firstDate.toDateString()}>
+      {format(secondDate, "LLLL yyyy")}
+    </time>
+  ) : (
+    "Present"
+  )
+}
