@@ -29,9 +29,12 @@ const months = [
         const begin = `${
           months[experience.data.beginDate.getMonth()]
         } ${experience.data.beginDate.getFullYear()}`;
-        const end = `${
-          months[experience.data.endDate.getMonth()]
-        } ${experience.data.endDate.getFullYear()}`;
+        const end =
+          experience.data.endDate !== null
+            ? `${
+                months[experience.data.endDate.getMonth()]
+              } ${experience.data.endDate.getFullYear()}`
+            : "Present";
         const title = experience.data.title;
 
         return (
