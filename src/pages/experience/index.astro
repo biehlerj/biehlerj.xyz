@@ -1,0 +1,50 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const allExperience = await getCollection("experience");
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+---
+
+<Layout title="Experience">
+  <main class="main">
+    <header>
+      <h1>Experience</h1>
+    </header>
+    {
+      allExperience.map((experience) => {
+        const begin = `${
+          months[experience.data.beginDate.getMonth()]
+        } ${experience.data.beginDate.getFullYear()}`;
+        const end = `${
+          months[experience.data.endDate.getMonth()]
+        } ${experience.data.endDate.getFullYear()}`;
+        const title = experience.data.title;
+
+        return (
+          <a href={`/experience/${experience.slug}`}>
+            <article>
+              <header>
+                <h2>{title}</h2>
+              </header>
+              <p>{`${begin} to ${end}`}</p>
+            </article>
+          </a>
+        );
+      })
+    }
+  </main>
+</Layout>
