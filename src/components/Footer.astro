@@ -1,0 +1,31 @@
+---
+import { format } from "date-fns";
+const fullDate = new Date();
+const year = format(fullDate, "yyyy");
+---
+
+<footer>
+  <span>
+    © {year}
+    <a href="https://biehlerj.xyz">Jacob Biehler</a>
+  </span>
+  <span>
+    Powered by
+    <a href="https://astro.build/">Astro</a>
+  </span>
+</footer>
+
+<style>
+  footer {
+    max-width: calc(var(--main-width) + var(--gap) * 2);
+    margin: auto;
+    padding: calc((var(--footer-height) - var(--gap)) / 2) var(--gap);
+    text-align: center;
+    line-height: 24px;
+  }
+
+  footer span {
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
+  }
+</style>
