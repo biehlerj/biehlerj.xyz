@@ -1,0 +1,23 @@
+---
+import MultiDate from "@components/MultiDate.astro";
+import Layout from "./Layout.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={frontmatter.title}>
+  <article>
+    <h1>{frontmatter.title}</h1>
+    <div>
+      <MultiDate
+        firstDate={frontmatter.beginDate}
+        secondDate={frontmatter.endDate}
+      />
+      <br />
+      {frontmatter.degree}
+      <br />
+      {frontmatter.location}
+    </div>
+    <slot />
+  </article>
+</Layout>

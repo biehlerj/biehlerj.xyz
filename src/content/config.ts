@@ -15,7 +15,25 @@ const projectsCollection = defineCollection({
   }),
 });
 
+const educationCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    beginDate: z.date(),
+    endDate: z.date(),
+    location: z.string(),
+    degree: z.string(),
+  }),
+});
+
+const certsCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    date: z.date(),
+  }),
+});
+
 export const collections = {
   experience: experienceCollection,
   projects: projectsCollection,
+  education: educationCollection,
 };
