@@ -1,0 +1,16 @@
+---
+import MonthYearDate from "@components/MonthYearDate.astro";
+import Layout from "./Layout.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={frontmatter.title}>
+  <article>
+    <h1>{frontmatter.title}</h1>
+    <div>
+      <MonthYearDate date={frontmatter.date} />
+    </div>
+    <slot />
+  </article>
+</Layout>

@@ -1,0 +1,70 @@
+---
+import "@styles/global.css";
+import Layout from "@layouts/Layout.astro";
+import { getCollection } from "astro:content";
+import MultiDate from "@components/MultiDate.astro";
+import MonthYearDate from "@components/MonthYearDate.astro";
+
+const allEducation = await getCollection("education");
+const allCerts = await getCollection("certs");
+---
+
+<Layout title="Education">
+  <main class="main">
+    <header>
+      <h1>Education and Certificates</h1>
+    </header>
+    <h2>Education</h2>
+    {
+      allEducation.map((education) => {
+        const title = education.data.title;
+        const beginDate = education.data.beginDate;
+        const endDate = education.data.endDate;
+        const location = education.data.location;
+        const degree = education.data.degree;
+
+        return (
+          <div>
+            <a href={`/education/${education.slug}`}>
+              <header>
+                <h3>{title}</h3>
+              </header>
+            </a>
+            <article>
+              <small>
+                <MultiDate firstDate={beginDate} secondDate={endDate} />
+                <br />
+                {location}
+                <br />
+                {degree}
+                <br />
+              </small>
+            </article>
+          </div>
+        );
+      })
+    }
+    <h2>Certifications</h2>
+    {
+      allCerts.map((cert) => {
+        const title = cert.data.title;
+        const date = cert.data.date;
+
+        return (
+          <div>
+            <a href={`/certs/${cert.slug}`}>
+              <header>
+                <h3>{title}</h3>
+              </header>
+            </a>
+            <article>
+              <small>
+                <MonthYearDate date={date} />
+              </small>
+            </article>
+          </div>
+        );
+      })
+    }
+  </main>
+</Layout>
