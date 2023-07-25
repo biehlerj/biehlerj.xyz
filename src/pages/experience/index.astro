@@ -1,22 +1,9 @@
 ---
+import MultiDate from "@components/MultiDate.astro";
 import Layout from "@layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
 const allExperience = await getCollection("experience");
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
 ---
 
 <Layout title="Experience">
@@ -26,15 +13,6 @@ const months = [
     </header>
     {
       allExperience.map((experience) => {
-        const begin = `${
-          months[experience.data.beginDate.getMonth()]
-        } ${experience.data.beginDate.getFullYear()}`;
-        const end =
-          experience.data.endDate !== null
-            ? `${
-                months[experience.data.endDate.getMonth()]
-              } ${experience.data.endDate.getFullYear()}`
-            : "Present";
         const title = experience.data.title;
 
         return (
@@ -43,7 +21,12 @@ const months = [
               <header>
                 <h2>{title}</h2>
               </header>
-              <p>{`${begin} to ${end}`}</p>
+              <p>
+                <MultiDate
+                  firstDate={experience.data.beginDate}
+                  secondDate={experience.data.endDate}
+                />
+              </p>
             </article>
           </a>
         );
