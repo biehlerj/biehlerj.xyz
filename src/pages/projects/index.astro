@@ -1,5 +1,9 @@
 ---
+import Date from "@components/Date.astro";
 import Layout from "@layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const allProjects = await getCollection("projects");
 ---
 
 <Layout title="Projects">
@@ -7,5 +11,24 @@ import Layout from "@layouts/Layout.astro";
     <header>
       <h1>Projects</h1>
     </header>
+    {
+      allProjects.map((project) => {
+        const title = project.data.title;
+        const date = project.data.date;
+
+        return (
+          <a href={`/projects/${project.slug}`}>
+            <article>
+              <header>
+                <h2>{title}</h2>
+              </header>
+              <p>
+                <Date date={date} />
+              </p>
+            </article>
+          </a>
+        );
+      })
+    }
   </main>
 </Layout>

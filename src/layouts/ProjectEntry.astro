@@ -1,0 +1,15 @@
+---
+import Date from "@components/Date.astro";
+import Layout from "./Layout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={frontmatter.title}>
+  <article>
+    <h1>{frontmatter.title}</h1>
+    <div>
+      <Date date={frontmatter.date} />
+    </div>
+    <slot />
+  </article>
+</Layout>
