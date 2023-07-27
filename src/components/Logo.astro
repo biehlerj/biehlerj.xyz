@@ -1,8 +1,13 @@
 <div class="logo">
-  <a href="/">Jacob Biehler</a>
+  <a class="name" href="/">Jacob Biehler</a>
   <div class="logo-switches">
     <button id="themeToggle">
-      <svg width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <svg
+        width="24"
+        height="18"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
         <path
           class="sun"
           fill-rule="evenodd"
@@ -23,9 +28,24 @@
     border: 0;
     background: none;
   }
-  .sun {
-    fill: var(--ctp-frappe-lavender);
+
+  button#themeToggle {
+    font-size: 26px;
+    margin: auto 4px;
   }
+
+  button {
+    padding: 0;
+  }
+
+  .logo-switches {
+    flex-wrap: inherit;
+  }
+
+  .sun {
+    fill: var(--ctp-latte-lavender);
+  }
+
   .moon {
     fill: transparent;
   }
@@ -33,6 +53,7 @@
   :global(.dark) .sun {
     fill: transparent;
   }
+
   :global(.dark) .moon {
     fill: var(--ctp-mocha-lavender);
   }

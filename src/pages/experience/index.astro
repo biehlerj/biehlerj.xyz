@@ -3,6 +3,7 @@ import "@styles/global.css";
 import MultiDate from "@components/MultiDate.astro";
 import Layout from "@layouts/Layout.astro";
 import { getCollection } from "astro:content";
+import Card from "@components/Card.astro";
 
 const allExperience = await getCollection("experience");
 ---
@@ -15,21 +16,13 @@ const allExperience = await getCollection("experience");
     {
       allExperience.map((experience) => {
         const title = experience.data.title;
+        const begin = experience.data.beginDate;
+        const end = experience.data.endDate;
 
         return (
-          <a href={`/experience/${experience.slug}`}>
-            <article>
-              <header>
-                <h2>{title}</h2>
-              </header>
-              <p>
-                <MultiDate
-                  firstDate={experience.data.beginDate}
-                  secondDate={experience.data.endDate}
-                />
-              </p>
-            </article>
-          </a>
+          <Card href={`/experience/${experience.slug}`} title={title}>
+            <MultiDate firstDate={begin} secondDate={end} />
+          </Card>
         );
       })
     }

@@ -3,6 +3,7 @@ import "@styles/global.css";
 import Date from "@components/Date.astro";
 import Layout from "@layouts/Layout.astro";
 import { getCollection } from "astro:content";
+import Card from "@components/Card.astro";
 
 const allProjects = await getCollection("projects");
 ---
@@ -18,16 +19,9 @@ const allProjects = await getCollection("projects");
         const date = project.data.date;
 
         return (
-          <a href={`/projects/${project.slug}`}>
-            <article>
-              <header>
-                <h2>{title}</h2>
-              </header>
-              <p>
-                <Date date={date} />
-              </p>
-            </article>
-          </a>
+          <Card href={`/projects/${project.slug}`} title={title}>
+            <Date date={date} />
+          </Card>
         );
       })
     }

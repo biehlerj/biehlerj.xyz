@@ -6,7 +6,7 @@ import "@styles/global.css";
 ---
 
 <Layout title="Jacob Biehler">
-  <main>
+  <main class="main">
     <div class="profile">
       <img
         class="profile"
@@ -19,9 +19,28 @@ import "@styles/global.css";
       <span>Software Engineer and FOSS Enthusiast</span>
     </div>
     <SocialIcons />
-    <button type="button"><a href="/about">About Me</a></button>
-    <button type="button"><a href="/experience">Experience</a></button>
-    <button type="button"><a href="/projects">Projects</a></button>
-    <button type="button"><a href="/education">Education</a></button>
+    <div class="buttons">
+      <a
+        id="experience"
+        class="px-6 py-3 no-underline rounded hover:underline"
+        href="/experience"
+      >
+        <span>Experience</span>
+      </a>
+      <a
+        id="projects"
+        class="px-6 py-3 no-underline rounded hover:underline"
+        href="/projects"
+      >
+        <span>Projects</span>
+      </a>
+      <a
+        id="education"
+        class="px-6 py-3 no-underline rounded hover:underline"
+        href="/education"
+      >
+        <span>Education</span>
+      </a>
+    </div>
   </main>
 </Layout>

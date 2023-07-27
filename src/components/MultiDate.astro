@@ -11,13 +11,13 @@ const { firstDate, secondDate } = Astro.props;
 
 <time datetime={firstDate.toDateString()}>{format(firstDate, "LLLL yyyy")}</time
 >
-to
+<span class="split">to</span>
 {
   secondDate !== null ? (
     <time datetime={firstDate.toDateString()}>
       {format(secondDate, "LLLL yyyy")}
     </time>
   ) : (
-    "Present"
+    <p class="present-tie">"Present"</p>
   )
 }

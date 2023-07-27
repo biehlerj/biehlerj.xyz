@@ -75,20 +75,6 @@ img {
   margin-inline-end: 8px;
 }
 
-button#theme-toggle {
-  font-size: 26px;
-  margin: auto 4px;
-}
-
-body.dark #moon {
-  vertical-align: middle;
-  display: none;
-}
-
-body:not(.dark) #sun {
-  display: none;
-}
-
 #menu {
   list-style: none;
   word-break: keep-all;
@@ -118,8 +104,8 @@ ul {
 }
 
 html.dark {
-  background-color: var(--ctp-mocha-base);
-  color: var(--ctp-mocha-lavender);
+  background: var(--bg-color);
+  color: var(--text-color);
 }
 
 .dark .nav-links a {
@@ -127,6 +113,40 @@ html.dark {
 }
 
 html {
-  background-color: var(--ctp-frappe-base);
-  color: var(--ctp-frappe-lavender);
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+time {
+  color: var(--text-color);
+}
+
+.present-time,
+.split {
+  color: var(--text-color);
+}
+
+.footer-link {
+  text-decoration: underline;
+}
+
+.buttons {
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+#experience,
+#projects,
+#education {
+  padding: 6px;
+  margin: 8px;
+  border-radius: var(--radius);
+  background-color: var(--home-link-color);
+  --tw-bg-opacity: 1;
+  color: var(--text-color);
+}
+
+p {
+  margin-top: 0;
 }

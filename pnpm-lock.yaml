@@ -11,6 +11,9 @@ dependencies:
   '@astrojs/ts-plugin':
     specifier: ^1.1.0
     version: 1.1.0
+  '@catppuccin/palette':
+    specifier: ^0.2.0
+    version: 0.2.0
   astro:
     specifier: ^2.9.2
     version: 2.9.2
@@ -381,6 +384,10 @@ packages:
       '@babel/helper-string-parser': 7.22.5
       '@babel/helper-validator-identifier': 7.22.5
       to-fast-properties: 2.0.0
+    dev: false
+
+  /@catppuccin/palette@0.2.0:
+    resolution: {integrity: sha512-PoAMQMEbL8fBEO80eusB+XQg+1i2kxQHw6COwBRC4bVWxWuRroZjm3K6bOdqPHNHKikDIV7wLi9hSG4NoD1FEQ==}
     dev: false
 
   /@emmetio/abbreviation@2.3.3:
