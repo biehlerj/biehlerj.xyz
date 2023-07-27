@@ -1,12 +1,8 @@
-:root {
-  --gap: 24px;
-  --content-gap: 20px;
-  --nav-width: 1024px;
-  --main-width: 720px;
-  --header-height: 60px;
-  --footer-height: 60px;
-  --radius: 8px;
-}
+@import "./vars.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .main {
   position: relative;
   min-height: calc(100vh - var(--header-height) - var(--footer-height));
@@ -79,20 +75,6 @@ img {
   margin-inline-end: 8px;
 }
 
-button#theme-toggle {
-  font-size: 26px;
-  margin: auto 4px;
-}
-
-body.dark #moon {
-  vertical-align: middle;
-  display: none;
-}
-
-body:not(.dark) #sun {
-  display: none;
-}
-
 #menu {
   list-style: none;
   word-break: keep-all;
@@ -119,4 +101,52 @@ body:not(.dark) #sun {
 
 ul {
   padding: 0;
+}
+
+html.dark {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+
+html {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+time {
+  color: var(--text-color);
+}
+
+.present-time,
+.split {
+  color: var(--text-color);
+}
+
+.footer-link {
+  text-decoration: underline;
+}
+
+.buttons {
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+#experience,
+#projects,
+#education {
+  padding: 6px;
+  margin: 8px;
+  border-radius: var(--radius);
+  background-color: var(--home-link-color);
+  --tw-bg-opacity: 1;
+  color: var(--text-color);
+}
+
+p {
+  margin-top: 0;
 }

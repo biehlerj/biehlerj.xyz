@@ -4,6 +4,8 @@ import Layout from "@layouts/Layout.astro";
 import { getCollection } from "astro:content";
 import MultiDate from "@components/MultiDate.astro";
 import MonthYearDate from "@components/MonthYearDate.astro";
+import Card from "@components/Card.astro";
+import Date from "@components/Date.astro";
 
 const allEducation = await getCollection("education");
 const allCerts = await getCollection("certs");
@@ -14,7 +16,7 @@ const allCerts = await getCollection("certs");
     <header>
       <h1>Education and Certificates</h1>
     </header>
-    <h2>Education</h2>
+    <h2 class="text-xl"><strong>Education</strong></h2>
     {
       allEducation.map((education) => {
         const title = education.data.title;
@@ -25,26 +27,20 @@ const allCerts = await getCollection("certs");
 
         return (
           <div>
-            <a href={`/education/${education.slug}`}>
-              <header>
-                <h3>{title}</h3>
-              </header>
-            </a>
-            <article>
-              <small>
+            <Card href={`/education/${education.slug}`} title={title}>
+              <article>
                 <MultiDate firstDate={beginDate} secondDate={endDate} />
                 <br />
                 {location}
                 <br />
                 {degree}
-                <br />
-              </small>
-            </article>
+              </article>
+            </Card>
           </div>
         );
       })
     }
-    <h2>Certifications</h2>
+    <h2 class="text-xl"><strong>Certifications</strong></h2>
     {
       allCerts.map((cert) => {
         const title = cert.data.title;
@@ -52,16 +48,9 @@ const allCerts = await getCollection("certs");
 
         return (
           <div>
-            <a href={`/certs/${cert.slug}`}>
-              <header>
-                <h3>{title}</h3>
-              </header>
-            </a>
-            <article>
-              <small>
-                <MonthYearDate date={date} />
-              </small>
-            </article>
+            <Card href={`/certs/${cert.slug}`} title={title}>
+              <Date date={date} />
+            </Card>
           </div>
         );
       })

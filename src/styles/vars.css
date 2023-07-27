@@ -1,0 +1,21 @@
+@import "@catppuccin/palette/style";
+
+:root {
+  --gap: 24px;
+  --content-gap: 20px;
+  --nav-width: 1024px;
+  --main-width: 720px;
+  --header-height: 60px;
+  --footer-height: 60px;
+  --radius: 8px;
+  --bg-color: var(--ctp-latte-base);
+  --text-color: var(--ctp-latte-lavender);
+  --home-link-color: var(--ctp-latte-surface0);
+}
+
+:root.dark {
+  --bg-color: var(--ctp-mocha-base);
+  --text-color: var(--ctp-mocha-lavender);
+  --card-color: var(--ctp-frappe-base);
+  --home-link-color: var(--ctp-frappe-mantle);
+}
