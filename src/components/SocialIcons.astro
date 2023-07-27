@@ -1,33 +1,37 @@
 ---
-import {Icon} from 'astro-icon';
+import { Icon } from "astro-icon";
 
 const socials = [
-    {platform: "Github", url: "https://github.com/biehlerj"},
-    {platform: "Gitlab", url: "https://gitlab.com/biehlerj"},
-    {platform: "Keybase", url: "https://keybase.io/biehlerj"},
-    {platform: "Linkedin", url: "https://www.linkedin.com/in/jacob-biehler"},
-    {platform: "Email", url: "mailto:jacob@biehlerj.xyz"}
-]
+  { platform: "Github", url: "https://github.com/biehlerj" },
+  { platform: "Gitlab", url: "https://gitlab.com/biehlerj" },
+  { platform: "Keybase", url: "https://keybase.io/biehlerj" },
+  { platform: "Linkedin", url: "https://www.linkedin.com/in/jacob-biehler" },
+  { platform: "Email", url: "mailto:jacob@biehlerj.xyz" },
+];
 ---
-<div class="social-icons">
-    {socials.map(social =>
-            <a href={social.url} target="_blank" rel="noopener noreferrer me" title={social.platform}>
-                <Icon name={social.platform.toLowerCase()}/>
-            </a>
-    )}
+
+<div id="social-icons" class="flex justify-center">
+  {
+    socials.map((social) => (
+      <a
+        href={social.url}
+        target="_blank"
+        rel="noopener noreferrer me"
+        title={social.platform}
+      >
+        <Icon name={social.platform.toLowerCase()} />
+      </a>
+    ))
+  }
 </div>
 
 <style>
-    .social-icons {
-        padding: 12px 0;
-    }
+  #social-icons a svg {
+    height: 26px;
+    width: 26px;
+  }
 
-    .social-icons a svg {
-        height: 26px;
-        width: 26px;
-    }
-
-    .social-icons a:not(:last-of-type) {
-        margin-inline-end: 12px;
-    }
+  #social-icons a:not(:last-of-type) {
+    margin-inline-end: 12px;
+  }
 </style>
