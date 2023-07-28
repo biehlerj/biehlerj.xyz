@@ -6,6 +6,8 @@ location: 'San Francisco, CA'
 degree: 'N/A'
 ---
 
+# Code School
+
 At the coding school I attended in San Francisco I learned full stack software engineering. The curriculum covered shell
 scripting, systems programming with C, backend web development with Python, Flask, and MySQL, frontend web development
 with JavaScript and JQuery, and DevOps with Puppet, Python, uwsgi, and Nginx. The curriculum was project based with the
