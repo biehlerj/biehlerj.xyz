@@ -2,6 +2,31 @@
 title: "Moebius Solutions"
 beginDate: 2019-12-03
 endDate: 2023-01-10
+skills: [
+    "TypeScript",
+    "JavaScript",
+    "React",
+    "Redux",
+    "Ramda",
+    "Electron",
+    "Python",
+    "Flask",
+    "SQLAlchemy",
+    "Java",
+    "JaxRS",
+    "Flutter",
+    "HTML5",
+    "CSS",
+    "Less",
+    "LaTeX",
+    "PostgreSQL",
+    "Redis",
+    "Docker",
+    "OpenShift",
+    "Jenkins",
+    "Visual Studio Code",
+    "IntelliJ",
+]
 ---
 
 [Moebius Solutions, Inc.](https://www.moesol.com/) develops advanced Command and Control software, middleware, and integration platforms for the
@@ -21,29 +46,3 @@ React, and Redux
 * Documented test procedures for the customer end users using [LaTeX](https://www.latex-project.org/)
 * Created a Java class in existing code base to dynamically generate markdown with the status of an application and
 rendered the document in the browser using drawdown.js to convert the markdown to HTML
-
-## Technologies Used
-
-* TypeScript
-* JavaScript
-* React
-* Redux
-* Ramda
-* Electron
-* Python3
-* Flask
-* SQLAlchemy
-* Java
-* JaxRS
-* Flutter
-* HTML5
-* CSS
-* Less
-* LaTeX
-* PostgreSQL
-* Redis
-* Docker
-* OpenShift
-* Jenkins
-* Visual Studio Code
-* IntelliJ

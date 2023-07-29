@@ -1,6 +1,13 @@
 ---
 title: 'Conveyor'
 date: 2020-01-17
+skills: [
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Redux",
+    "Ramda",
+]
 ---
 
 [Conveyor](https://github.com/autoinvent/conveyor) is a series of frontend libraries for building an [AutoInvent](https://github.com/autoinvent)
@@ -21,11 +28,3 @@ Footer component if there was an item that was summable (ie prices) and properly
 locale information.
 
 You can find all my commits to the repository on the [conveyor GitHub page](https://github.com/autoinvent/conveyor/commits?author=biehlerj)
-
-Skills used:
-
-- JavaScript
-- TypeScript
-- React
-- Redux
-- Ramda
