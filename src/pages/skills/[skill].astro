@@ -49,7 +49,7 @@ const { projectSkills, experienceSkills, educationSkills } = Astro.props;
 <Layout title={skill}>
     <main class="main">
       {projectSkills.length >= 1 ? (<h1 class="text-4xl text-center font-extrabold">
-        Projects I've worked with {skill}
+        Projects where I've worked with {skill}
       </h1>
       <ul>
         {
@@ -84,7 +84,7 @@ const { projectSkills, experienceSkills, educationSkills } = Astro.props;
     }
     {educationSkills.length >= 1 ? (
         <h1 class="text-4xl text-center font-extrabold">
-            Schools I've worked with {skill}
+            Schools where I've worked with {skill}
         </h1>
         <ul>
             {educationSkills.map(education => (

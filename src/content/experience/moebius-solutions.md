@@ -26,6 +26,7 @@ skills: [
     "Jenkins",
     "Visual Studio Code",
     "IntelliJ",
+    "Shell Scripting",
 ]
 ---
 

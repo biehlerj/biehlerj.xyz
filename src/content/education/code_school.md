@@ -15,6 +15,7 @@ skills: [
     "Nginx",
     "JavaScript",
     "JQuery",
+    "CSS",
 ]
 ---
 
