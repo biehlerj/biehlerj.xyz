@@ -105,8 +105,8 @@ A big thank you to the following projects for helping me build my website the wa
 
 There is still more work to be done in this repo before it replaces the current [biehlerj.xyz](https://biehlerj.xyz). Below is a non-exhaustive list of things that are planned which includes things that will be done after this code base takes over as [biehlerj.xyz](https://biehlerj.xyz):
 
-- Use Tailwind CSS to make the site look beautiful
-- Leverage [Catppuccin Tailwind CSS Plugin](https://github.com/catppuccin/tailwindcss) to toggle between light and dark mode.
+- ~~Use Tailwind CSS to make the site look beautiful~~ Added in [v0.2.0](https://github.com/biehlerj/biehlerj.xyz/releases/tag/v0.2.0)
+- ~~Leverage [Catppuccin Tailwind CSS Plugin](https://github.com/catppuccin/tailwindcss) to toggle between light and dark mode.~~ Added in [v0.2.0](https://github.com/biehlerj/biehlerj.xyz/releases/tag/v0.2.0)
 - Improve the navigation in pages:
   - Have content pages have a button to go back to the landing page for that content collection
   - Tag skills for all content collections (where applicable):
