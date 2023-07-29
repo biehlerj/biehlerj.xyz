@@ -5,8 +5,8 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   experimental: {
-    assets: true
+    assets: true,
   },
-  site: "https://biehlerj.github.io",
-  integrations: [tailwind()]
+  site: "https://biehlerj.xyz",
+  integrations: [tailwind()],
 });
