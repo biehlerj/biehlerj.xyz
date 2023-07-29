@@ -4,8 +4,6 @@ beginDate: 2019-01-07
 endDate: 2019-05-10
 ---
 
-# ScoreShuttle
-
 ScoreShuttle is a service that helps manage credit and dispute management automatically. It helps users review their
 credit score, dispute credit inaccuracies, and protect credit data.
 

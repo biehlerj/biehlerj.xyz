@@ -3,8 +3,6 @@ title: 'CompTIA Security+'
 date: 2020-01-10
 ---
 
-# CompTIA Security+
-
 While working for [Moebius Solutions](https://www.moesol.com/) I got my [CompTIA Security+](https://www.comptia.org/certifications/security)
 certificate in order to certify my skills in cybersecurity.
 

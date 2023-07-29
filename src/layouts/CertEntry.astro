@@ -6,11 +6,13 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout title={frontmatter.title}>
-  <article>
-    <h1>{frontmatter.title}</h1>
-    <div>
-      <MonthYearDate date={frontmatter.date} />
-    </div>
-    <slot />
-  </article>
+  <div class="main">
+    <article class="prose text-justify">
+      <h1>{frontmatter.title}</h1>
+      <div>
+        <MonthYearDate date={frontmatter.date} />
+      </div>
+      <slot />
+    </article>
+  </div>
 </Layout>

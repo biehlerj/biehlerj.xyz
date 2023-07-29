@@ -3,7 +3,6 @@ title: "Moebius Solutions"
 beginDate: 2019-12-03
 endDate: 2023-01-10
 ---
-# Moebius Solutions
 
 [Moebius Solutions, Inc.](https://www.moesol.com/) develops advanced Command and Control software, middleware, and integration platforms for the
 Navy and Marine Corps. Moebius Solutions has a focus on Opensource Culture and Technical Excellence.

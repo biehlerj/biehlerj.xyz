@@ -143,13 +143,18 @@ time {
   color: var(--text-color);
 }
 
-p {
-  text-align: justify;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  margin-top: 0;
+a:not(.name, #menu a, .buttons a, .link-card a) {
+  text-decoration: underline;
 }
 
-a:not(.name, #menu a) {
-  text-decoration: underline;
+.prose,
+.prose a,
+.prose code,
+.prose h1,
+.prose h2 {
+  color: var(--text-color);
+}
+
+li {
+  margin: 5px 0;
 }

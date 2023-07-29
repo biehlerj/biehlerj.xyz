@@ -6,13 +6,16 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout title={frontmatter.title}>
-  <article>
-    <p>
-      <MultiDate
-        firstDate={frontmatter.beginDate}
-        secondDate={frontmatter.endDate}
-      />
-    </p>
-    <slot />
-  </article>
+  <div class="main">
+    <article class="prose text-justify">
+      <h1>{frontmatter.title}</h1>
+      <div>
+        <MultiDate
+          firstDate={frontmatter.beginDate}
+          secondDate={frontmatter.endDate}
+        />
+      </div>
+      <slot />
+    </article>
+  </div>
 </Layout>
