@@ -1,0 +1,112 @@
+---
+import Card from "@components/Card.astro";
+import Date from "@components/Date.astro";
+import MultiDate from "@components/MultiDate.astro";
+import Layout from "@layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const allProjects = await getCollection("projects");
+  const allExperience = await getCollection("experience");
+  const allEducation = await getCollection("education");
+  const projectSkills = allProjects.flatMap((project) => project.data.skills);
+  const experienceSkills = allExperience.flatMap(
+    (experience) => experience.data.skills
+  );
+  const educationSkills = allEducation.flatMap((education) =>
+    education.data.skills ? education.data.skills : []
+  );
+  const skillsSet = [
+    ...new Set(projectSkills.concat(experienceSkills, educationSkills)),
+  ].sort();
+
+  return skillsSet.map((skill) => {
+    const filteredProjectSkills = allProjects.filter((project) =>
+      project.data.skills.includes(skill)
+    );
+    const filteredExperienceSkills = allExperience.filter((experience) =>
+      experience.data.skills.includes(skill)
+    );
+    const filteredEducationSkills = allEducation.filter((education) =>
+      education.data.skills?.includes(skill)
+    );
+
+    return {
+      params: { skill },
+      props: {
+        projectSkills: filteredProjectSkills,
+        experienceSkills: filteredExperienceSkills,
+        educationSkills: filteredEducationSkills,
+      },
+    };
+  });
+}
+
+const { skill } = Astro.params;
+const { projectSkills, experienceSkills, educationSkills } = Astro.props;
+---
+
+<Layout title={skill}>
+    <main class="main">
+      {projectSkills.length >= 1 ? (<h1 class="text-4xl text-center font-extrabold">
+        Projects where I've worked with {skill}
+      </h1>
+      <ul>
+        {
+          projectSkills.map((project) => (
+            <Card title={project.data.title} href={`/projects/${project.slug}`}>
+              <Date date={project.data.date} />
+            </Card>
+          ))
+        }
+      </ul>
+      <br />) : <></>}
+      {experienceSkills.length >= 1 ?
+        (<h1 class="text-4xl text-center font-extrabold">
+        Jobs where I've worked with {skill}
+      </h1>
+      <ul>
+        {
+          experienceSkills.map((experience) => (
+            <Card
+              title={experience.data.title}
+              href={`/experience/${experience.slug}`}
+            >
+              <MultiDate
+                firstDate={experience.data.beginDate}
+                secondDate={experience.data.endDate}
+              />
+            </Card>
+          ))
+        }
+    </ul>
+    <br />) : <></>
+    }
+    {educationSkills.length >= 1 ? (
+        <h1 class="text-4xl text-center font-extrabold">
+            Schools where I've worked with {skill}
+        </h1>
+        <ul>
+            {educationSkills.map(education => (
+                <div>
+                <Card title={education.data.title} href={`/education/${education.slug}`}>
+                    <article>
+                    <MultiDate firstDate={education.data.beginDate} secondDate={education.data.endDate} />
+                    <br />
+                    {education.data.location}
+                    <br />
+                    {education.data.degree}
+                </article>
+                    </Card>
+                </div>
+            ))}
+            </ul>
+    ) : <></>}
+    </main>
+</Layout>
+
+<style>
+    #text {
+        color: var(--text-color);
+    }
+</style>

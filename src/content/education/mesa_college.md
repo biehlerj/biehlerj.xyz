@@ -4,6 +4,7 @@ beginDate: 2012-08-15
 endDate: 2017-06-15
 location: 'San Diego, CA'
 degree: "Associate's Degree of Science in Business Administration"
+skills: []
 ---
 
 At Mesa College I did general education for an undergraduate degree in Business Administration. I first got an Associate's

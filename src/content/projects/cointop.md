@@ -1,6 +1,7 @@
 ---
 title: 'Cointop'
 date: 2020-08-10
+skills: ["Go"]
 ---
 
 [Cointop](https://github.com/cointop-sh/cointop) is a CLI utility written in Go to track cryptocurrencies.
@@ -13,7 +14,3 @@ defined the config.toml file for Cointop would be placed into `$XDG_CONFIG_HOME/
 `$XDG_CONFIG_HOME/cointop/`.
 
 You can find the code and subsequent tests that were added in [this PR on GitHub](https://github.com/cointop-sh/cointop/pull/58)
-
-Skills used:
-
-- Go

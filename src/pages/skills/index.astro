@@ -1,0 +1,26 @@
+---
+import Card from "@components/Card.astro";
+import Layout from "@layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const allProjects = await getCollection("projects");
+const allExperience = await getCollection("experience");
+const allEducation = await getCollection("education");
+const projectSkills = allProjects.flatMap((project) => project.data.skills);
+const experienceSkills = allExperience.flatMap(
+  (experience) => experience.data.skills
+);
+const educationSkills = allEducation.flatMap((education) =>
+  education.data.skills ? education.data.skills : []
+);
+const skills = [
+  ...new Set(projectSkills.concat(experienceSkills, educationSkills)),
+].sort();
+---
+
+<Layout title="Skills">
+  <div class="main">
+    <h1>Programming languages and technologies I've worked with</h1>
+    {skills.map((skill) => <Card title={skill} href={`/skills/${skill}`} />)}
+  </div>
+</Layout>
