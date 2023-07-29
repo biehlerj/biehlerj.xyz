@@ -99,7 +99,7 @@ img {
   flex-wrap: inherit;
 }
 
-ul {
+#menu ul {
   padding: 0;
 }
 
@@ -126,10 +126,6 @@ time {
   color: var(--text-color);
 }
 
-.footer-link {
-  text-decoration: underline;
-}
-
 .buttons {
   padding-top: 16px;
   display: flex;
@@ -147,6 +143,18 @@ time {
   color: var(--text-color);
 }
 
-p {
-  margin-top: 0;
+a:not(.name, #menu a, .buttons a, .link-card a) {
+  text-decoration: underline;
+}
+
+.prose,
+.prose a,
+.prose code,
+.prose h1,
+.prose h2 {
+  color: var(--text-color);
+}
+
+li {
+  margin: 5px 0;
 }

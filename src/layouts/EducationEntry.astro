@@ -6,18 +6,20 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout title={frontmatter.title}>
-  <article>
-    <h1>{frontmatter.title}</h1>
-    <div>
-      <MultiDate
-        firstDate={frontmatter.beginDate}
-        secondDate={frontmatter.endDate}
-      />
-      <br />
-      {frontmatter.degree}
-      <br />
-      {frontmatter.location}
-    </div>
-    <slot />
-  </article>
+  <div class="main">
+    <article class="prose text-justify">
+      <h1>{frontmatter.title}</h1>
+      <div>
+        <MultiDate
+          firstDate={frontmatter.beginDate}
+          secondDate={frontmatter.endDate}
+        />
+        <br />
+        {frontmatter.degree}
+        <br />
+        {frontmatter.location}
+      </div>
+      <slot />
+    </article>
+  </div>
 </Layout>
