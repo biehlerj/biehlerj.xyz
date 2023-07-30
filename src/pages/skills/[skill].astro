@@ -1,4 +1,5 @@
 ---
+import BackCard from "@components/BackCard.astro";
 import Card from "@components/Card.astro";
 import Date from "@components/Date.astro";
 import MultiDate from "@components/MultiDate.astro";
@@ -102,6 +103,7 @@ const { projectSkills, experienceSkills, educationSkills } = Astro.props;
             ))}
             </ul>
     ) : <></>}
+        <BackCard href="/skills" title="Back to Skills" />
     </main>
 </Layout>
 

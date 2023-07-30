@@ -1,0 +1,22 @@
+---
+import "@styles/global.css";
+
+interface Props {
+  title: string;
+  href: string;
+}
+
+const { href, title } = Astro.props;
+---
+
+<div class="buttons">
+  <a href={href}>
+    <h2>
+      {title}
+      <span>&rarr;</span>
+    </h2>
+    <p>
+      <slot />
+    </p>
+  </a>
+</div>
