@@ -109,10 +109,10 @@ There is still more work to be done in this repo before it replaces the current 
 
 - ~~Use Tailwind CSS to make the site look beautiful~~ Added in [v0.2.0](https://github.com/biehlerj/biehlerj.xyz/releases/tag/v0.2.0)
 - ~~Leverage [Catppuccin Tailwind CSS Plugin](https://github.com/catppuccin/tailwindcss) to toggle between light and dark mode.~~ Added in [v0.2.0](https://github.com/biehlerj/biehlerj.xyz/releases/tag/v0.2.0)
-- Improve the navigation in pages:
-  - Have content pages have a button to go back to the landing page for that content collection
-  - Tag skills for all content collections (where applicable):
-    - Use tags to allow users to search through my skills and how much, when, and where I used/learned them
+- ~~Improve the navigation in pages:~~ Added in [v0.3.0](https://github.com/biehlerj/biehlerj.xyz/releases/tag/v0.3.0)
+  - ~~Have content pages have a button to go back to the landing page for that content collection~~
+  - ~~Tag skills for all content collections (where applicable):~~
+    - ~~Use tags to allow users to search through my skills and how much, when, and where I used/learned them~~
 - Create a blog:
   - Make tags for blog posts that are separate from tags for skills
   - Create a CMS to make uploading new posts easy
