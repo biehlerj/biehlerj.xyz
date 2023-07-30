@@ -100,6 +100,8 @@ A big thank you to the following projects for helping me build my website the wa
 - [Astro Icon](https://github.com/natemoo-re/astro-icon) for making me not have worry about inlining my svgs on my own.
 - [Hugo PaperMod theme](https://github.com/adityatelange/hugo-PaperMod) for inspiring my layout and providing the SVGs for my social media links.
 - [date-fns](https://github.com/date-fns/date-fns) for making working with dates so much easier!
+- [Tailwind CSS](https://tailwindcss.com/) for helping make my site beautiful with ease!
+- [Catppuccin Palette](https://github.com/catppuccin/palette) for helping theme my website the way I want!
 
 ## Roadmap
 
