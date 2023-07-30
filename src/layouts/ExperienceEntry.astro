@@ -1,6 +1,7 @@
 ---
 import MultiDate from "@components/MultiDate.astro";
 import Layout from "./Layout.astro";
+import BackCard from "@components/BackCard.astro";
 
 const { frontmatter } = Astro.props;
 ---
@@ -28,6 +29,7 @@ const { frontmatter } = Astro.props;
         }
       </div>
     </article>
+    <BackCard href="/experience" title="Back to Experience" />
   </div>
 </Layout>
 

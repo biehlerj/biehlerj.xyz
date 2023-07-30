@@ -1,6 +1,7 @@
 ---
 import Date from "@components/Date.astro";
 import Layout from "./Layout.astro";
+import BackCard from "@components/BackCard.astro";
 
 const { frontmatter } = Astro.props;
 ---
@@ -25,6 +26,7 @@ const { frontmatter } = Astro.props;
         }
       </div>
     </article>
+    <BackCard href="/projects" title="Back to Projects" />
   </div>
 </Layout>
 
