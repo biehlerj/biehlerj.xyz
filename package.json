@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^4.0.0",
-    "@astrojs/ts-plugin": "^1.1.0",
+    "@astrojs/ts-plugin": "^1.1.1",
     "@catppuccin/palette": "^0.2.0",
     "astro": "^2.9.6",
     "astro-icon": "^0.8.1",
