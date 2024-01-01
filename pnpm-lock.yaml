@@ -12,8 +12,8 @@ dependencies:
     specifier: ^1.1.3
     version: 1.1.3
   '@catppuccin/palette':
-    specifier: ^0.2.0
-    version: 0.2.0
+    specifier: ^1.0.1
+    version: 1.0.1
   astro:
     specifier: ^2.10.14
     version: 2.10.14
@@ -390,8 +390,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@catppuccin/palette@0.2.0:
-    resolution: {integrity: sha512-PoAMQMEbL8fBEO80eusB+XQg+1i2kxQHw6COwBRC4bVWxWuRroZjm3K6bOdqPHNHKikDIV7wLi9hSG4NoD1FEQ==}
+  /@catppuccin/palette@1.0.1:
+    resolution: {integrity: sha512-aCVFn6j2HnN6M/yk4co67rF/EWrXhZO2qpJUJd6Xsz8t1BF6PbmftM8Gz3wFHPfUdTogU0dUiKs+YsW19hJ8mQ==}
     dev: false
 
   /@emmetio/abbreviation@2.3.3:
