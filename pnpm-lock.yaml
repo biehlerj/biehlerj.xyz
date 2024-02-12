@@ -9,8 +9,8 @@ dependencies:
     specifier: ^5.1.0
     version: 5.1.0(astro@4.3.5)(tailwindcss@3.4.1)
   '@astrojs/ts-plugin':
-    specifier: ^1.5.0
-    version: 1.5.0
+    specifier: ^1.5.1
+    version: 1.5.1
   '@catppuccin/palette':
     specifier: ^1.0.3
     version: 1.0.3
@@ -123,8 +123,8 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/ts-plugin@1.5.0:
-    resolution: {integrity: sha512-4GoMz26UPWwHdXXGuWhMzTlOM1Cey3o/+QRkbX/1C1cNE8hFG5hsG9LZQRiUVb8iCWiadsM/w2RqMGC251rxXg==}
+  /@astrojs/ts-plugin@1.5.1:
+    resolution: {integrity: sha512-GN2a65Vsn4Zk+tbsTSfek3k2wGU2ZKvkNErSegFPA/rpKeYBsCYxSNpOtc8CeU7ToDZUSxRWT8BQ4OJKOMTC7g==}
     dependencies:
       '@astrojs/compiler': 2.5.3
       '@jridgewell/sourcemap-codec': 1.4.15
@@ -1296,7 +1296,7 @@ packages:
       normalize-path: 3.0.0
       readdirp: 3.6.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
 
   /chownr@1.1.4:
     resolution: {integrity: sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==}
@@ -1620,6 +1620,7 @@ packages:
 
   /end-of-stream@1.4.4:
     resolution: {integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==}
+    requiresBuild: true
     dependencies:
       once: 1.4.0
     dev: false
@@ -1849,19 +1850,11 @@ packages:
   /fs.realpath@1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
 
-  /fsevents@2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
-    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
-    requiresBuild: true
-    optional: true
-
   /fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
-    dev: false
     optional: true
 
   /function-bind@1.1.1:
