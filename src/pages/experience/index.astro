@@ -6,6 +6,9 @@ import { getCollection } from "astro:content";
 import Card from "@components/Card.astro";
 
 const allExperience = await getCollection("experience");
+allExperience.sort(
+  (a, b) => b.data.beginDate.getTime() - a.data.beginDate.getTime()
+);
 ---
 
 <Layout title="Experience">
@@ -15,6 +18,7 @@ const allExperience = await getCollection("experience");
     </header>
     {
       allExperience.map((experience) => {
+        console.log(experience);
         const title = experience.data.title;
         const begin = experience.data.beginDate;
         const end = experience.data.endDate;

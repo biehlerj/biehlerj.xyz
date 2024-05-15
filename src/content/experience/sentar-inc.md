@@ -12,4 +12,4 @@ skills: [
 [Sentar Inc.](https://www.sentar.com/) is a cyber intelligence company that innovates, builds, and secures
 mission-critical assets for national security.
 
-At Sentar I work on building a web HMI for hardware to be deployed on customer devices that will allow for zeroization.
+At Sentar I work on building a web HMI for hardware to be deployed on customer devices that will allow for zeroization as well as adding new features to the hardware to support more devices for zeroization.
