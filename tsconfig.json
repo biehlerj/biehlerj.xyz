@@ -6,7 +6,6 @@
         "name": "@astrojs/ts-plugin"
       }
     ],
-    "importsNotUsedAsValues": "error",
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
