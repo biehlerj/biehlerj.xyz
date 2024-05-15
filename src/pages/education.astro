@@ -8,6 +8,10 @@ import Date from "@components/Date.astro";
 
 const allEducation = await getCollection("education");
 const allCerts = await getCollection("certs");
+allEducation.sort(
+  (a, b) => b.data.beginDate.getTime() - a.data.beginDate.getTime()
+);
+allCerts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 
 <Layout title="Education">
