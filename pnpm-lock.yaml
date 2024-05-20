@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@astrojs/tailwind':
     specifier: ^5.1.0
-    version: 5.1.0(astro@4.8.3)(tailwindcss@3.4.3)
+    version: 5.1.0(astro@4.8.6)(tailwindcss@3.4.3)
   '@astrojs/ts-plugin':
     specifier: ^1.8.0
     version: 1.8.0
@@ -15,8 +15,8 @@ dependencies:
     specifier: ^1.1.1
     version: 1.1.1
   astro:
-    specifier: ^4.8.3
-    version: 4.8.3
+    specifier: ^4.8.6
+    version: 4.8.6
   astro-icon:
     specifier: ^1.1.0
     version: 1.1.0
@@ -97,13 +97,13 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/tailwind@5.1.0(astro@4.8.3)(tailwindcss@3.4.3):
+  /@astrojs/tailwind@5.1.0(astro@4.8.6)(tailwindcss@3.4.3):
     resolution: {integrity: sha512-BJoCDKuWhU9FT2qYg+fr6Nfb3qP4ShtyjXGHKA/4mHN94z7BGcmauQK23iy+YH5qWvTnhqkd6mQPQ1yTZTe9Ig==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.8.3
+      astro: 4.8.6
       autoprefixer: 10.4.17(postcss@8.4.35)
       postcss: 8.4.35
       postcss-load-config: 4.0.2(postcss@8.4.35)
@@ -1407,8 +1407,8 @@ packages:
       - supports-color
     dev: false
 
-  /astro@4.8.3:
-    resolution: {integrity: sha512-pgIKopkmAUXY3EJHdG7zQpudtBzYAsd94A1R7jmLpH2LFZvzHEkAdHnunmSVmgikJCNqtEo3bUCHgLnCPQaN1g==}
+  /astro@4.8.6:
+    resolution: {integrity: sha512-psHIfK+e+bMPhRwghV9yCGH/uc1jvY4DHmDZdoEepax9yA7kzYH0wt3dpkqlcrO2zxl5jzSC3DmqZfkD6wnW9A==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
     dependencies:
