@@ -12,8 +12,8 @@ dependencies:
     specifier: ^1.8.0
     version: 1.8.0
   '@catppuccin/palette':
-    specifier: ^1.1.1
-    version: 1.1.1
+    specifier: ^1.2.0
+    version: 1.2.0
   astro:
     specifier: ^4.8.6
     version: 4.8.6
@@ -366,8 +366,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@catppuccin/palette@1.1.1:
-    resolution: {integrity: sha512-wgITbl3OEIUnv8WPTdG2BGjepSMZtJW9V4XpxNDJjCvel0Q5+BxRmKH3XYN0vVjohHR+APCyZCpzSnO+GdsTLg==}
+  /@catppuccin/palette@1.2.0:
+    resolution: {integrity: sha512-R5fxLcU47mRcsdQkXZBNfxt7SdEqLGWb1qhEKBrnYfEB4ZWOQRBEow4e78PKxaFUECBNOs6uEkwvwxFL9FmQqQ==}
     dev: false
 
   /@emnapi/runtime@1.1.1:
