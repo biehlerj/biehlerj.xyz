@@ -9,8 +9,8 @@ dependencies:
     specifier: ^5.1.0
     version: 5.1.0(astro@4.8.3)(tailwindcss@3.4.3)
   '@astrojs/ts-plugin':
-    specifier: ^1.7.0
-    version: 1.7.0
+    specifier: ^1.8.0
+    version: 1.8.0
   '@catppuccin/palette':
     specifier: ^1.1.1
     version: 1.1.1
@@ -55,10 +55,6 @@ packages:
 
   /@antfu/utils@0.7.7:
     resolution: {integrity: sha512-gFPqTG7otEJ8uP6wrhDv6mqwGWYZKNvAcCq6u9hOj0c+IKCEsY4L1oC9trPq2SaWIzAfHvqfBDxF591JkMf+kg==}
-    dev: false
-
-  /@astrojs/compiler@2.7.1:
-    resolution: {integrity: sha512-/POejAYuj8WEw7ZI0J8JBvevjfp9jQ9Wmu/Bg52RiNwGXkMV7JnYpsenVfHvvf1G7R5sXHGKlTcxlQWhoUTiGQ==}
     dev: false
 
   /@astrojs/compiler@2.8.0:
@@ -131,14 +127,14 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/ts-plugin@1.7.0:
-    resolution: {integrity: sha512-AKsjdQMp5LUGSJAwBGiutFhk7dUeI1FFEza9b7pOHE9j7OTr9JNaSAL2gnSpLieiL2xPm8LOWQ3OCPfzHHerbQ==}
+  /@astrojs/ts-plugin@1.8.0:
+    resolution: {integrity: sha512-SXbMemCjA66eHXLon2uDGkLAdbIRS+EzSBKPqBuOcQ4XzU/o+oTTp12cXBIQTOtP/zsnuJPYA6gc36Ylic196g==}
     dependencies:
-      '@astrojs/compiler': 2.7.1
+      '@astrojs/compiler': 2.8.0
       '@jridgewell/sourcemap-codec': 1.4.15
-      '@volar/language-core': 2.2.2
-      '@volar/typescript': 2.2.2
-      semver: 7.6.0
+      '@volar/language-core': 2.2.4
+      '@volar/typescript': 2.2.4
+      semver: 7.6.2
       vscode-languageserver-textdocument: 1.0.11
     dev: false
 
@@ -1315,22 +1311,22 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: false
 
-  /@volar/language-core@2.2.2:
-    resolution: {integrity: sha512-GuvEL4JdxbnLVhPLICncCGT+tVW4cIz9GxXNeDofNnJ4iNTKhr5suGVsA1GLOne9PbraSjn8PlLt+pvLxuRVeQ==}
+  /@volar/language-core@2.2.4:
+    resolution: {integrity: sha512-7As47GndxGxsqqYnbreLrfB5NDUeQioPM2LJKUuB4/34c0NpEJ2byVl3c9KYdjIdiEstWZ9JLtLKNTaPWb5jtA==}
     dependencies:
-      '@volar/source-map': 2.2.2
+      '@volar/source-map': 2.2.4
     dev: false
 
-  /@volar/source-map@2.2.2:
-    resolution: {integrity: sha512-vUwvZuSW6iN4JI9QRinh9EjFasx1TUtnaWMKwgWx08xz1PyYuNkLlWlrZXBZ5GGBhML0u230M/7X+AHY2h9yKg==}
+  /@volar/source-map@2.2.4:
+    resolution: {integrity: sha512-m92FLpR9vB1YEZfiZ+bfgpLrToL/DNkOrorWVep3pffHrwwI4Tx2oIQN+sqHJfKkiT5N3J1owC+8crhAEinfjg==}
     dependencies:
       muggle-string: 0.4.1
     dev: false
 
-  /@volar/typescript@2.2.2:
-    resolution: {integrity: sha512-WcwOREz7+uOrpjUrKhOMaOKKmyPdtqF95HWX7SE0d9hhBB1KkfahxhaAex5U9Bn43LfINHlycLoYCNEtfeKm0g==}
+  /@volar/typescript@2.2.4:
+    resolution: {integrity: sha512-uAQC53tgEbHO62G8NXMfmBrJAlP2QJ9WxVEEQqqK3I6VSy8frL5LbH3hAWODxiwMWixv74wJLWlKbWXOgdIoRQ==}
     dependencies:
-      '@volar/language-core': 2.2.2
+      '@volar/language-core': 2.2.4
       path-browserify: 1.0.1
     dev: false
 
@@ -2657,13 +2653,6 @@ packages:
       yallist: 3.1.1
     dev: false
 
-  /lru-cache@6.0.0:
-    resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
-    engines: {node: '>=10'}
-    dependencies:
-      yallist: 4.0.0
-    dev: false
-
   /magic-string@0.30.10:
     resolution: {integrity: sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==}
     dependencies:
@@ -3705,14 +3694,6 @@ packages:
   /semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
-    dev: false
-
-  /semver@7.6.0:
-    resolution: {integrity: sha512-EnwXhrlwXMk9gKu5/flx5sv/an57AkRplG3hTK68W7FRDN+k+OWBj65M7719OkA82XLBxrcX0KSHj+X5COhOVg==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dependencies:
-      lru-cache: 6.0.0
     dev: false
 
   /semver@7.6.2:
