@@ -12,8 +12,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0(astro@4.12.2(@types/node@20.11.17))(tailwindcss@3.4.5)
       '@astrojs/ts-plugin':
-        specifier: ^1.9.0
-        version: 1.9.0
+        specifier: ^1.9.1
+        version: 1.9.1
       '@catppuccin/palette':
         specifier: ^1.2.0
         version: 1.2.0
@@ -50,8 +50,8 @@ packages:
   '@antfu/utils@0.7.7':
     resolution: {integrity: sha512-gFPqTG7otEJ8uP6wrhDv6mqwGWYZKNvAcCq6u9hOj0c+IKCEsY4L1oC9trPq2SaWIzAfHvqfBDxF591JkMf+kg==}
 
-  '@astrojs/compiler@2.8.1':
-    resolution: {integrity: sha512-NGfPAgU/9rvDEwsXu82RI1AxiivaxtEYBK9saW1f+2fTHUUqCJQ27HYtb2akG2QxCmFikgZ9zk26BEWgiHho1Q==}
+  '@astrojs/compiler@2.10.1':
+    resolution: {integrity: sha512-XmM4j6BjvOVMag2xELq0JuG2yKOW8wgIu6dvb9BsjbGYmnvoStJn/pqEzVqc1EBszf2xYT7onIkftIOUz9AwrQ==}
 
   '@astrojs/compiler@2.9.2':
     resolution: {integrity: sha512-Vpu0Ffsj8SoV+N0DFHlxxOMKHwSC9059Xy/OlG1t6uFYSoJXxkBC2WyF6igO7x10V+8uJrhOxaXr3nA90kJXow==}
@@ -76,8 +76,8 @@ packages:
     resolution: {integrity: sha512-/ca/+D8MIKEC8/A9cSaPUqQNZm+Es/ZinRv0ZAzvu2ios7POQSsVD+VOj7/hypWNsNM3T7RpfgNq7H2TU1KEHA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
 
-  '@astrojs/ts-plugin@1.9.0':
-    resolution: {integrity: sha512-QastYNlKF2I0oOksKRm3bG8auk2AlyD6be7ptHzSHKj/ikUvK9ObnS2ruGFh0h8aQ760Qw7aEJ9JZT/IZ7t46A==}
+  '@astrojs/ts-plugin@1.9.1':
+    resolution: {integrity: sha512-Rijik6fzJAIAqK9+4iNm+b4TFk82HwEVtK+U5z3XJQJKet8vRQI8V2L27D4jXLjSpsKHvV+rmGlqQOOyXaucgg==}
 
   '@babel/code-frame@7.24.7':
     resolution: {integrity: sha512-BcYH1CVJBO9tvyIZ2jVeXgSIMvGZ2FDRvDdOIVQyuklNKSsx+eppDEBq/g47Ayw+RqNFE+URvOShmf+f/qwAlA==}
@@ -2183,7 +2183,7 @@ snapshots:
 
   '@antfu/utils@0.7.7': {}
 
-  '@astrojs/compiler@2.8.1': {}
+  '@astrojs/compiler@2.10.1': {}
 
   '@astrojs/compiler@2.9.2': {}
 
@@ -2238,9 +2238,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/ts-plugin@1.9.0':
+  '@astrojs/ts-plugin@1.9.1':
     dependencies:
-      '@astrojs/compiler': 2.8.1
+      '@astrojs/compiler': 2.10.1
       '@jridgewell/sourcemap-codec': 1.4.15
       '@volar/language-core': 2.4.0-alpha.15
       '@volar/typescript': 2.4.0-alpha.15
