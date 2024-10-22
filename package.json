@@ -11,7 +11,7 @@
     "sync": "astro sync"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^5.1.1",
+    "@astrojs/tailwind": "^5.1.2",
     "@astrojs/ts-plugin": "^1.10.2",
     "@catppuccin/palette": "^1.4.0",
     "astro": "^4.15.12",
