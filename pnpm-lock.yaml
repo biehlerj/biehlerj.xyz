@@ -15,8 +15,8 @@ importers:
         specifier: ^1.10.4
         version: 1.10.4
       '@catppuccin/palette':
-        specifier: ^1.5.0
-        version: 1.5.0
+        specifier: ^1.7.1
+        version: 1.7.1
       astro:
         specifier: ^4.16.7
         version: 4.16.7(@types/node@20.11.17)(rollup@4.21.2)(typescript@5.5.4)
@@ -203,8 +203,8 @@ packages:
     resolution: {integrity: sha512-OwS2CM5KocvQ/k7dFJa8i5bNGJP0hXWfVCfDkqRFP1IreH1JDC7wG6eCYCi0+McbfT8OR/kNqsI0UU0xP9H6PQ==}
     engines: {node: '>=6.9.0'}
 
-  '@catppuccin/palette@1.5.0':
-    resolution: {integrity: sha512-SQd/1h2gkK+nA5SWfd7NnUA/RsM8fIMJaqB8HzwATlNSDtPzTI7qmy3ei+jlgThlGILvdDt0C5CJ+3n/G9trKw==}
+  '@catppuccin/palette@1.7.1':
+    resolution: {integrity: sha512-aRc1tbzrevOTV7nFTT9SRdF26w/MIwT4Jwt4fDMc9itRZUDXCuEDBLyz4TQMlqO9ZP8mf5Hu4Jr6D03NLFc6Gw==}
 
   '@emnapi/runtime@1.1.1':
     resolution: {integrity: sha512-3bfqkzuR1KLx57nZfjr2NLnFOobvyS0aTszaEGCGqmYMVDRaGvgIZbjGSV/MHSSmLgQ/b9JFHQ5xm5WRZYd+XQ==}
@@ -2436,7 +2436,7 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@catppuccin/palette@1.5.0': {}
+  '@catppuccin/palette@1.7.1': {}
 
   '@emnapi/runtime@1.1.1':
     dependencies:
