@@ -30,7 +30,7 @@ allCerts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
         return (
           <div>
-            <Card href={`/education/${education.slug}`} title={title}>
+            <Card href={`/education/${education.id}`} title={title}>
               <article>
                 <MultiDate firstDate={beginDate} secondDate={endDate} />
                 <br />
@@ -51,7 +51,7 @@ allCerts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
         return (
           <div>
-            <Card href={`/certs/${cert.slug}`} title={title}>
+            <Card href={`/certs/${cert.id}`} title={title}>
               <Date date={date} />
             </Card>
           </div>

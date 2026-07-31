@@ -2,6 +2,12 @@
 title: "ScoreShuttle"
 beginDate: 2019-01-07
 endDate: 2019-05-10
+highlights:
+  [
+    "Built RESTful API routes for credit management services.",
+    "Developed admin tools for account management, sales tracking, and 3rd party integrations.",
+    "Fixed bugs in email template APIs to correctly format and send emails to customers."
+  ]
 skills: [
     "TypeScript",
     "Hapi.js",

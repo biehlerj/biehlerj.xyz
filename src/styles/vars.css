@@ -9,13 +9,17 @@
   --footer-height: 60px;
   --radius: 8px;
   --bg-color: var(--ctp-latte-base);
-  --text-color: var(--ctp-latte-lavender);
+  --text-color: var(--ctp-latte-text);
+  --subtext-color: var(--ctp-latte-subtext1);
+  --accent-color: var(--ctp-latte-blue);
   --home-link-color: var(--ctp-latte-surface0);
 }
 
 :root.dark {
   --bg-color: var(--ctp-mocha-base);
-  --text-color: var(--ctp-mocha-lavender);
-  --card-color: var(--ctp-frappe-base);
-  --home-link-color: var(--ctp-frappe-mantle);
+  --text-color: var(--ctp-mocha-text);
+  --subtext-color: var(--ctp-mocha-subtext1);
+  --accent-color: var(--ctp-mocha-mauve);
+  --card-color: var(--ctp-mocha-surface0);
+  --home-link-color: var(--ctp-mocha-mantle);
 }

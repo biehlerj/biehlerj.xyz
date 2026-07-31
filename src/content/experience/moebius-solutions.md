@@ -2,6 +2,13 @@
 title: "Moebius Solutions"
 beginDate: 2019-12-03
 endDate: 2023-01-10
+highlights:
+  [
+    "Developed applications using OpenShift, Docker, and Jenkins; modernized frontends with TypeScript and React.",
+    "Built cross-platform apps with Electron and Flutter; created status report UIs using Java and Markdown.",
+    "Contributed to the AutoInvent open-source projects Magql and Conveyor.",
+    "Documented test procedures for the customer end users using LaTeX."
+  ]
 skills: [
     "TypeScript",
     "JavaScript",

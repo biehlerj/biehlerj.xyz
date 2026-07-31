@@ -20,7 +20,7 @@ allProjects.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
         const date = project.data.date;
 
         return (
-          <Card href={`/projects/${project.slug}`} title={title}>
+          <Card href={`/projects/${project.id}`} title={title}>
             <Date date={date} />
           </Card>
         );

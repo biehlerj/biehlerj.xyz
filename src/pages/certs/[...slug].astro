@@ -1,17 +1,17 @@
 ---
 import CertEntry from "@layouts/CertEntry.astro";
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
   const certEntries = await getCollection("certs");
   return certEntries.map((entry) => ({
-    params: { slug: entry.slug },
+    params: { slug: entry.id },
     props: { entry },
   }));
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 ---
 
 <CertEntry frontmatter={entry.data}>

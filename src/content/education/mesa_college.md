@@ -4,6 +4,10 @@ beginDate: 2012-08-15
 endDate: 2017-06-15
 location: 'San Diego, CA'
 degree: "Associate's Degree of Science in Business Administration"
+highlights:
+  [
+    "Relevant coursework in Business Administration and Economics."
+  ]
 skills: []
 ---
 
