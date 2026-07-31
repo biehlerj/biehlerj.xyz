@@ -1,17 +1,17 @@
 ---
 import ProjectEntry from "@layouts/ProjectEntry.astro";
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
   const projectsEntries = await getCollection("projects");
   return projectsEntries.map((entry) => ({
-    params: { slug: entry.slug },
+    params: { slug: entry.id },
     props: { entry },
   }));
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 ---
 
 <ProjectEntry frontmatter={entry.data}>

@@ -23,7 +23,7 @@ allExperience.sort(
         const end = experience.data.endDate;
 
         return (
-          <Card href={`/experience/${experience.slug}`} title={title}>
+          <Card href={`/experience/${experience.id}`} title={title}>
             <MultiDate firstDate={begin} secondDate={end} />
           </Card>
         );

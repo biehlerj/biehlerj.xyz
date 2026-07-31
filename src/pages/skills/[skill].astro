@@ -55,7 +55,7 @@ const { projectSkills, experienceSkills, educationSkills } = Astro.props;
       <ul>
         {
           projectSkills.map((project) => (
-            <Card title={project.data.title} href={`/projects/${project.slug}`}>
+            <Card title={project.data.title} href={`/projects/${project.id}`}>
               <Date date={project.data.date} />
             </Card>
           ))
@@ -71,7 +71,7 @@ const { projectSkills, experienceSkills, educationSkills } = Astro.props;
           experienceSkills.map((experience) => (
             <Card
               title={experience.data.title}
-              href={`/experience/${experience.slug}`}
+              href={`/experience/${experience.id}`}
             >
               <MultiDate
                 firstDate={experience.data.beginDate}
@@ -90,7 +90,7 @@ const { projectSkills, experienceSkills, educationSkills } = Astro.props;
         <ul>
             {educationSkills.map(education => (
                 <div>
-                <Card title={education.data.title} href={`/education/${education.slug}`}>
+                <Card title={education.data.title} href={`/education/${education.id}`}>
                     <article>
                     <MultiDate firstDate={education.data.beginDate} secondDate={education.data.endDate} />
                     <br />
