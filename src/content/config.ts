@@ -6,6 +6,7 @@ const experienceCollection = defineCollection({
     beginDate: z.date(),
     endDate: z.nullable(z.date()),
     skills: z.string().array(),
+    highlights: z.string().array().optional(),
   }),
 });
 
@@ -14,6 +15,7 @@ const projectsCollection = defineCollection({
     title: z.string(),
     date: z.date(),
     skills: z.string().array(),
+    highlights: z.string().array().optional(),
   }),
 });
 
@@ -25,6 +27,7 @@ const educationCollection = defineCollection({
     location: z.string(),
     degree: z.string(),
     skills: z.nullable(z.string().array()),
+    highlights: z.string().array().optional(),
   }),
 });
 

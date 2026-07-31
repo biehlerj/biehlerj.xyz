@@ -2,6 +2,11 @@
 title: "Epsilon C5I"
 beginDate: 2023-06-26
 endDate: 2023-12-15
+highlights:
+  [
+    "Designed and maintained automated tests using Robot Framework and Python.",
+    "Performed manual QA and collaborated with the infrastructure team to maintain OpenShift deployments."
+  ]
 skills: [
   "Docker",
   "OpenShift",
