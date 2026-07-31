@@ -1,23 +1,99 @@
 ---
 import "@styles/global.css";
 import Layout from "@layouts/Layout.astro";
+import { Image } from "astro:assets";
+import pfpImage from "@assets/pfp.webp";
+import SocialIcons from "@components/SocialIcons.astro";
 ---
 
 <Layout title="About Me">
-  <main class="main space-y-4">
-    <h1 class="text-4xl text-center font-extrabold">
-      Hello! My name is Jacob Biehler
-    </h1>
+  <main class="main prose dark:prose-invert max-w-none text-left pt-8">
+    <div class="flex flex-col items-center mb-8">
+      <Image
+        src={pfpImage}
+        alt="Jacob Biehler"
+        class="w-32 h-32 rounded-full border-4 border-[var(--accent-color)] shadow-lg mb-4 object-cover"
+      />
+      <h1
+        class="text-4xl font-extrabold m-0 text-[var(--text-color)] text-center"
+      >
+        Hello! My name is Jacob Biehler
+      </h1>
+      <p class="text-xl italic text-[var(--subtext-color)] mt-2">
+        Software Engineer II at Raytheon
+      </p>
+    </div>
+
     <p>
-      I am a full stack software engineer with professional and hobby experience
-      with Typescript, React, Java, Python, Docker, and more.
+      I am a full-stack software engineer with professional and hobby experience
+      across a wide range of modern technologies, including TypeScript, React,
+      Python, and Docker.
     </p>
+
+    <h2 class="text-2xl font-bold border-b border-gray-600 pb-2 mt-8 mb-4">
+      Core Technologies
+    </h2>
+    <div class="flex flex-wrap gap-3 justify-center mb-8 mt-4">
+      <span
+        class="px-4 py-2 bg-[var(--accent-color)] text-white dark:text-gray-900 rounded-full font-bold shadow"
+        >TypeScript</span
+      >
+      <span
+        class="px-4 py-2 bg-[var(--accent-color)] text-white dark:text-gray-900 rounded-full font-bold shadow"
+        >React</span
+      >
+
+      <span
+        class="px-4 py-2 bg-[var(--accent-color)] text-white dark:text-gray-900 rounded-full font-bold shadow"
+        >Python</span
+      >
+      <span
+        class="px-4 py-2 bg-[var(--accent-color)] text-white dark:text-gray-900 rounded-full font-bold shadow"
+        >Docker</span
+      >
+      <span
+        class="px-4 py-2 bg-[var(--accent-color)] text-white dark:text-gray-900 rounded-full font-bold shadow"
+        >Linux</span
+      >
+    </div>
+
+    <h2 class="text-2xl font-bold border-b border-gray-600 pb-2 mt-8 mb-4">
+      Hobbies & Interests
+    </h2>
     <p>
-      I am passionate about Linux and Free and Open Source Software and
-      Hardware. In my spare time I enjoy working on hobby software projects,
-      learning programming languages, playing video games, going on hikes, bike
-      rides, and camping. I also enjoy watching anime and reading manga and
-      light novels.
+      Outside of work and writing software, I have a variety of hobbies that
+      keep me busy:
     </p>
+    <ul class="list-none pl-0 space-y-3">
+      <li class="flex items-center gap-3">
+        <span class="text-2xl">🏌️‍♂️</span>
+        <span class="text-lg">Golf</span>
+      </li>
+      <li class="flex items-center gap-3">
+        <span class="text-2xl">🎮</span>
+        <span class="text-lg">Video Games</span>
+      </li>
+      <li class="flex items-center gap-3">
+        <span class="text-2xl">📚</span>
+        <span class="text-lg">Anime, Manga, & Light Novels</span>
+      </li>
+      <li class="flex items-center gap-3">
+        <span class="text-2xl">🐧</span>
+        <span class="text-lg">Linux & FOSS</span>
+      </li>
+      <li class="flex items-center gap-3">
+        <span class="text-2xl">🚴‍♂️</span>
+        <span class="text-lg">Biking</span>
+      </li>
+      <li class="flex items-center gap-3">
+        <span class="text-2xl">🏕️</span>
+        <span class="text-lg">Hiking & Camping</span>
+      </li>
+    </ul>
+
+    <div class="mt-12 text-center border-t border-gray-600 pt-8">
+      <h2 class="text-2xl font-bold mb-6">Let's Connect</h2>
+      <SocialIcons />
+    </div>
   </main>
 </Layout>

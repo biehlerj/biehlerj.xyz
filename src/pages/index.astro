@@ -23,16 +23,18 @@ allEducation.sort(
 
 <Layout title="Jacob Biehler">
   <main class="main space-y-12 pb-16">
-    <section class="profile text-center mb-12">
+    <section class="flex flex-col items-center text-center mb-12 mt-8">
       <img
-        class="profile mx-auto mb-4"
         src={pfp.src}
-        width="150"
-        height="150"
-        alt="Jacob Biehler's profile picture"
+        alt="Jacob Biehler"
+        class="w-32 h-32 rounded-full border-4 border-[var(--accent-color)] shadow-lg mb-4 object-cover"
       />
-      <h1>Jacob Biehler</h1>
-      <span class="text-xl">Software Engineer and FOSS Enthusiast</span>
+      <h1 class="text-4xl font-extrabold m-0 text-[var(--text-color)]">
+        Jacob Biehler
+      </h1>
+      <p class="text-xl italic text-[var(--subtext-color)] mt-2">
+        Software Engineer and FOSS Enthusiast
+      </p>
       <div class="mt-4 flex justify-center">
         <SocialIcons />
       </div>
@@ -43,17 +45,17 @@ allEducation.sort(
     >
       <a
         href="#experience"
-        class="px-4 py-2 bg-gray-800 rounded hover:bg-gray-700 no-underline text-white font-medium"
+        class="px-4 py-2 bg-[var(--home-link-color)] rounded shadow hover:bg-[var(--accent-color)] hover:text-white dark:hover:text-gray-900 no-underline text-[var(--text-color)] font-medium transition-colors"
         >Experience</a
       >
       <a
         href="#projects"
-        class="px-4 py-2 bg-gray-800 rounded hover:bg-gray-700 no-underline text-white font-medium"
+        class="px-4 py-2 bg-[var(--home-link-color)] rounded shadow hover:bg-[var(--accent-color)] hover:text-white dark:hover:text-gray-900 no-underline text-[var(--text-color)] font-medium transition-colors"
         >Projects</a
       >
       <a
         href="#education"
-        class="px-4 py-2 bg-gray-800 rounded hover:bg-gray-700 no-underline text-white font-medium"
+        class="px-4 py-2 bg-[var(--home-link-color)] rounded shadow hover:bg-[var(--accent-color)] hover:text-white dark:hover:text-gray-900 no-underline text-[var(--text-color)] font-medium transition-colors"
         >Education</a
       >
     </div>
