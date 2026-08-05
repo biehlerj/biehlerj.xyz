@@ -6,7 +6,7 @@ const year = format(fullDate, "yyyy");
 
 <footer>
   <span class="sticky">
-    © {year}
+    © {year}{" "}
     <a
       class="footer-link"
       href="https://github.com/biehlerj/biehlerj.xyz"
@@ -16,14 +16,17 @@ const year = format(fullDate, "yyyy");
       Jacob Biehler
     </a>
   </span>
+  {" "}
   <span>
-    Powered by
+    Powered by{" "}
     <a
       class="footer-link"
       href="https://astro.build/"
       target="_blank"
-      rel="noopener noreferrer me">Astro</a
+      rel="noopener noreferrer me"
     >
+      Astro
+    </a>
   </span>
 </footer>
 
