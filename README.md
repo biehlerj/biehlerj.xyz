@@ -76,7 +76,7 @@ Any static assets, can be placed in the `public/` directory.
 
 For this project I am using the [experimental assets support](https://docs.astro.build/en/guides/assets/) for images.
 
-This website also uses the [content collections API](https://docs.astro.build/en/guides/content-collections/) to easily manage and configure entries for things like my education, projects I've worked on, etc. All subdirectory in `src/content/` holds items that are all similar and then are used by the `[..slug].astro` file in the corresponding directory in `src/pages/`.
+This website also uses the [content collections API](https://docs.astro.build/en/guides/content-collections/) to easily manage and configure entries for things like my education, projects I've worked on, etc. All subdirectories in `src/content/` hold items that are all similar and then are used by the `[...slug].astro` file in the corresponding directory in `src/pages/`.
 
 ## 🧞 Commands
 
