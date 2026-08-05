@@ -1,7 +1,6 @@
 @import "./vars.css";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 .main {
   position: relative;

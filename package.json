@@ -11,7 +11,6 @@
     "sync": "astro sync"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^6.0.2",
     "@astrojs/ts-plugin": "^1.10.10",
     "@catppuccin/palette": "^1.8.0",
     "astro": "^7.1.6",
@@ -22,6 +21,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "@tailwindcss/typography": "^0.5.20",
+    "@tailwindcss/vite": "^4.3.3",
     "sharp": "^0.35.3",
     "typescript": "^6.0.3"
   }
