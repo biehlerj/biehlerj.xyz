@@ -14,7 +14,7 @@
   "dependencies": {
     "@astrojs/ts-plugin": "^1.10.10",
     "@catppuccin/palette": "^1.8.0",
-    "astro": "^7.2.2",
+    "astro": "^7.2.4",
     "astro-icon": "^1.1.5",
     "date-fns": "^4.4.0",
     "tailwindcss": "^4.3.3"
