@@ -26,10 +26,15 @@ jobs:
         with:
           node-version: 22
           check-latest: true
+      - name: Normalize the Node.js version
+        id: node-version
+        env:
+          NODE_VERSION: ${{ steps.node.outputs.node-version }}
+        run: echo "version=${NODE_VERSION#v}" >> "$GITHUB_OUTPUT"
       - name: Install, build, and upload your site
         uses: withastro/action@v3
         with:
-          node-version: ${{ replace(steps.node.outputs.node-version, 'v', '') }}
+          node-version: ${{ steps.node-version.outputs.version }}
 
   deploy:
     needs: build
