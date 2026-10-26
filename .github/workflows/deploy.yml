@@ -20,10 +20,19 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v7
+      # `22` alone matches the runner image's cached Node 22 and skips newer
+      # patches. Astro 7.4.2 needs >=22.23.4, so resolve the latest 22.x and
+      # pass that exact version into the Astro action.
+      - name: Use the latest Node.js 22
+        id: node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          check-latest: true
       - name: Install, build, and upload your site
         uses: withastro/action@v3
         with:
-          node-version: 22
+          node-version: ${{ replace(steps.node.outputs.node-version, 'v', '') }}
 
   deploy:
     needs: build
